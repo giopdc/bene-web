@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bene-web",
+  "compatibility_date": "2026-11-19",
+  "assets": { "directory": "." },
+  "workers_dev": true
+}
