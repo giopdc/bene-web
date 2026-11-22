@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bene — Hecho a mano</title>
+<meta name="description" content="Bene crea objetos hechos a mano porque le encanta y porque tiene mucha imaginación. / Bene makes handmade objects because she loves it.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✋</text></svg>">
+<style>
+  /* ── Edit contact links here ─────────────────────── */
+  :root { --bg:#ffffff; --fg:#222; --muted:#666; --line:#e6e6e6; --accent:#222; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:20px 0; }
+  header strong { font-size:1.2rem; }
+  .lang button { background:none; border:1px solid var(--line); border-radius:20px; padding:6px 12px; font:inherit; font-size:.9rem; cursor:pointer; color:var(--muted); }
+  .lang button[aria-pressed="true"] { color:var(--fg); border-color:var(--fg); }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); line-height:1.15; margin: 40px 0 16px; }
+  h2 { font-size: 1.6rem; margin: 64px 0 12px; }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  .muted { color: var(--muted); }
+  ul.things { padding-left: 1.2em; margin: 0; }
+  ul.things li { margin: 4px 0; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
+  .grid figure { margin:0; }
+  .grid img { width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:8px; display:block; background:#f3f3f3; }
+  .grid figcaption { font-size:.9rem; color:var(--muted); margin-top:6px; }
+  .contact { display:grid; gap:10px; margin-top:20px; }
+  .contact a, .contact div { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 18px; border:1px solid var(--line); border-radius:10px; color:var(--fg); text-decoration:none; }
+  .contact a:hover { border-color: var(--fg); }
+  .contact span.soon { font-size:.85rem; color:var(--muted); background:#f3f3f3; padding:3px 10px; border-radius:20px; white-space:nowrap; }
+  footer { margin: 80px 0 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size:.9rem; color: var(--muted); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <strong>Bene</strong>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button data-set="es" aria-pressed="true">ES</button>
+      <button data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1 data-es="Cosas hechas a mano, con mucho cariño" data-en="Things made by hand, with a lot of love">Cosas hechas a mano, con mucho cariño</h1>
+      <p data-es="Hola, soy Bene. Hago cosas con mis manos porque me encanta y porque nunca me faltan ideas. Me gusta probar materiales, mezclar colores y dar una segunda vida a objetos que iban a tirarse."
+         data-en="Hi, I’m Bene. I make things with my hands because I love it, and because I’m never short of ideas. I like trying new materials, mixing colours and giving a second life to objects that were about to be thrown away.">Hola, soy Bene. Hago cosas con mis manos porque me encanta y porque nunca me faltan ideas. Me gusta probar materiales, mezclar colores y dar una segunda vida a objetos que iban a tirarse.</p>
+      <p data-es="Cada pieza es única: no hay dos iguales." data-en="Every piece is unique: no two are the same.">Cada pieza es única: no hay dos iguales.</p>
+    </section>
+
+    <section>
+      <h2 data-es="Lo que hago" data-en="What I make">Lo que hago</h2>
+      <ul class="things">
+        <li data-es="Faroles y lámparas" data-en="Lanterns and lamps">Faroles y lámparas</li>
+        <li data-es="Collares, colgantes y pulseras" data-en="Necklaces, pendants and bracelets">Collares, colgantes y pulseras</li>
+        <li data-es="Servilleteros y detalles para la mesa" data-en="Napkin rings and table details">Servilleteros y detalles para la mesa</li>
+        <li data-es="Tarjetas pintadas a mano" data-en="Hand-painted cards">Tarjetas pintadas a mano</li>
+        <li data-es="Decoración para casa" data-en="Home decoration">Decoración para casa</li>
+        <li data-es="Objetos nuevos a partir de cosas viejas, como discos de vinilo" data-en="New objects made from old things, like vinyl records">Objetos nuevos a partir de cosas viejas, como discos de vinilo</li>
+        <li data-es="Encargos personalizados" data-en="Custom orders">Encargos personalizados</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-es="Algunas ideas" data-en="A few ideas">Algunas ideas</h2>
+      <p class="muted" data-es="Una pequeña muestra de cosas que se me han ocurrido." data-en="A small sample of things I’ve come up with.">Una pequeña muestra de cosas que se me han ocurrido.</p>
+      <div class="grid">
+        <figure><img src="fotos/farol-1.webp" loading="lazy" data-es-alt="Farol con hojas" data-en-alt="Leaf lantern" alt="Farol con hojas"><figcaption data-es="Un farol con hojas" data-en="A leaf lantern">Un farol con hojas</figcaption></figure>
+        <figure><img src="fotos/vinilos-1.webp" loading="lazy" data-es-alt="Cuencos de vinilo" data-en-alt="Vinyl record bowls" alt="Cuencos de vinilo"><figcaption data-es="Discos viejos convertidos en cuencos" data-en="Old records turned into bowls">Discos viejos convertidos en cuencos</figcaption></figure>
+        <figure><img src="fotos/bambu-1.webp" loading="lazy" data-es-alt="Tarjetas de bambú" data-en-alt="Bamboo cards" alt="Tarjetas de bambú"><figcaption data-es="Tarjetas pintadas a mano" data-en="Hand-painted cards">Tarjetas pintadas a mano</figcaption></figure>
+        <figure><img src="fotos/colgantes-1.webp" loading="lazy" data-es-alt="Colgante de cristal" data-en-alt="Glass pendant" alt="Colgante de cristal"><figcaption data-es="Un colgante de cristal" data-en="A glass pendant">Un colgante de cristal</figcaption></figure>
+        <figure><img src="fotos/servilletero-1.webp" loading="lazy" data-es-alt="Servilletero" data-en-alt="Napkin ring" alt="Servilletero"><figcaption data-es="Servilleteros como joyas" data-en="Jewel-like napkin rings">Servilleteros como joyas</figcaption></figure>
+        <figure><img src="fotos/pluma-1.webp" loading="lazy" data-es-alt="Tarjetas con pluma" data-en-alt="Feather cards" alt="Tarjetas con pluma"><figcaption data-es="Tarjetas con pluma" data-en="Feather cards">Tarjetas con pluma</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+      <p data-es="¿Te gusta algo o tienes una idea? Escríbeme por cualquiera de estos sitios." data-en="Like something or have an idea? Write to me on any of these.">¿Te gusta algo o tienes una idea? Escríbeme por cualquiera de estos sitios.</p>
+      <div class="contact">
+        <a href="https://www.instagram.com/benes_art" target="_blank" rel="noopener"><span>Instagram</span><span>@benes_art</span></a>
+        <!-- When the accounts exist: replace each <div> with <a href="URL" target="_blank" rel="noopener"> and remove the "soon" label -->
+        <div><span>Vinted</span><span class="soon" data-es="Próximamente" data-en="Coming soon">Próximamente</span></div>
+        <div><span>Wallapop</span><span class="soon" data-es="Próximamente" data-en="Coming soon">Próximamente</span></div>
+        <!-- Email / WhatsApp: uncomment and fill in
+        <a href="mailto:EMAIL"><span>Email</span><span>EMAIL</span></a>
+        <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener"><span>WhatsApp</span><span>+34 XXX XXX XXX</span></a>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Bene · <span data-es="Hecho a mano" data-en="Handmade">Hecho a mano</span></footer>
+</div>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  function setLang(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-' + l + ']').forEach(function (el) { el.textContent = el.getAttribute('data-' + l); });
+    document.querySelectorAll('[data-' + l + '-alt]').forEach(function (el) { el.alt = el.getAttribute('data-' + l + '-alt'); });
+    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+    document.title = l === 'en' ? 'Bene — Handmade' : 'Bene — Hecho a mano';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) { b.onclick = function () { setLang(b.dataset.set); }; });
+  var saved; try { saved = localStorage.getItem('lang'); } catch (e) {}
+  setLang(saved === 'en' || saved === 'es' ? saved : ((navigator.language || 'es').slice(0, 2) === 'en' ? 'en' : 'es'));
+</script>
+</body>
+</html>
